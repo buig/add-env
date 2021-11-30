@@ -6,8 +6,6 @@ services:
     volumes:
       - .:/code
       - ./provisioning/sites-enabled:/etc/apache2/sites-enabled
-      - /app-vendor
-      - /app-var
     env_file:
       - .env.webapp
     ports:
